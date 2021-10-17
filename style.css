@@ -61,13 +61,14 @@ p {
 
 .bullet {
   padding: 0.521vw;
-  transition: 0.3s ease-in-out;
   cursor: pointer;
   width: 0.521vw;
   height: 0.521vw;
 }
 
 .circle-bullet {
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, border-color;
   cursor: pointer;
   border: 2px solid blue;
   border-radius: 50%;
@@ -75,8 +76,8 @@ p {
   width: 0.521vw;
 }
 
-.bullet:hover > .circle-bullet,
-.bullet:active > .circle-bullet {
+.bullet:hover .circle-bullet,
+.bullet:active .circle-bullet {
   border-color: white;
   background-color: white;
 }
